@@ -32,9 +32,9 @@ In a bash-compatible terminal that can execute git, paste
 ```
 
 ## Run SCCeeker
-One might want to test SCCeeker first:
+One might want to test SCCeeker first, by replaceing ABSOLUTE_PATH by the absolute path you cloned SCCeeker in:
 ```
-bash SCCeeker_severalGenomes.sh -d /Users/hm772632/Software/SCCeeker/DB_20171117/ -o /Users/hm772632/Software/SCCeeker/test/ -f test/example_input.tbl -k extended
+bash SCCeeker_severalGenomes.sh -d /ABSOLUTE_PATH/SCCeeker/DB_20171117/ -o /ABSOLUTE_PATH/SCCeeker/test/ -f test/example_input.tbl -k extended
 Rscript SCCeeker_forGitHub.R -f test/cat_all5_blast.out -w whole_cassette_SCCmec_database_EXTENDED_20171117 -k test/cat_all5_kmer.tsv 
 ```
 To get all options, runs:
