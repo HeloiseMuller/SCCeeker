@@ -45,15 +45,15 @@ Rscript SCCeeker.R -h
 
 ## Output description of SCCeeker.sh
  
-`cat_allX_blast.out` where X is the total number of analyzed assemblies is the blast output.
+`cat_allX_blast.out` where X is the total number of analyzed assemblies is the blast output.  
 `cat_allX_kmer.tsv` where X is the total number of analyzed assemblies is the output of the k-mer approach if the option was activated.
 
 ## Output description of SCCeeker.R
 
-`SCCeeker_summary_perRegion.out` summarizes all candidate regions identified in the dataset. One assembly can have several candidate regions.
-`SCCeeker_summary_perFile.out` is a summary for each assembly. Are reported the presence of a mec gene, the number of candidate regions, the type of cassette if any region could be typed, and the same but reported the type only if it was validated by the k-mer approach
-Many intermediate filed can be found in the directory detailed_outputs/
-Some figures summarizing the results can be found in the directory Figures/
+`SCCeeker_summary_perRegion.out` summarizes all candidate regions identified in the dataset. One assembly can have several candidate regions.  
+`SCCeeker_summary_perFile.out` is a summary for each assembly. Are reported the presence of a mec gene, the number of candidate regions, the type of cassette if any region could be typed, and the same but reported the type only if it was validated by the k-mer approach.   
+Many intermediate filed can be found in the directory detailed_outputs/  
+Some figures summarizing the results can be found in the directory Figures/  
 
 ## Content of SCCeeker
 
@@ -67,8 +67,8 @@ Some figures summarizing the results can be found in the directory Figures/
 
 `test/` contains inputs to test SCCeeker
 
-`SCCeeker.sh` runs the first step of SCCeeker (blast and an optional k-mer approach) on one genome.
-Alternatively, `SCCeeker_severalGenomes.sh` runs the first step of SCCeeker on several genomes. 
-`findtemplate.py` is the k-mer approach ran by the first step of SCCeeker. This script comes from SCCmecFinder.
-`SCCeeker.R` is the second step of SCCeeker that identify candidate regions and attempt to type them. 
-`typing.R` contains the definition of ccr complexes, mec complexes and the 15 approved typed. It is read by `SCCeeker.R`. One might want to update it when more typed will be approved. Otherwise, no need to touch it.
+`SCCeeker.sh` runs the first step of SCCeeker (blast and an optional k-mer approach) on one genome.  
+Alternatively, `SCCeeker_severalGenomes.sh` runs the first step of SCCeeker on several genomes.  
+`findtemplate.py` is the k-mer approach ran by the first step of SCCeeker. This script comes from SCCmecFinder.  
+`SCCeeker.R` is the second step of SCCeeker that identify candidate regions and attempt to type them.   
+`typing.R` contains the definition of ccr complexes, mec complexes and the 15 approved typed. It is read by `SCCeeker.R`. One might want to update it when more typed will be approved. Otherwise, no need to touch it.  
