@@ -31,12 +31,18 @@ In a bash-compatible terminal that can execute git, paste
  unzip DB_20171117.zip 
 ```
 
-## Run SCCeeker
-One might want to test SCCeeker first, by replaceing ABSOLUTE_PATH by the absolute path you cloned SCCeeker in:
+## Get files ready to run SCCeeker
+SCCeeker needs a two columns table containing the absolute path of each genome you want to scan for SCCmec elements and the pattern to use in all outputs for each file. See ` test/example_input.tbl ` as an example. 
+
+## Test SCCeeker
+1) Replace the PATH found in ` test/example_input.tbl `  by the correct path
+2) Run the next two command lines,  by replacing paths:
 ```
-bash SCCeeker_severalGenomes.sh -d /ABSOLUTE_PATH/SCCeeker/DB_20171117/ -o /ABSOLUTE_PATH/SCCeeker/test/ -f test/example_input.tbl -k extended
-Rscript SCCeeker_forGitHub.R -f test/cat_all5_blast.out -w whole_cassette_SCCmec_database_EXTENDED_20171117 -k test/cat_all5_kmer.tsv 
+bash SCCeeker_severalGenomes.sh -d $ABSOLUTE_PATH_SCCeeker/SCCeeker/DB_20171117/  -f $ABSOLUTE_PATH_SCCeeker/test/example_input.tbl -k extended -o $ANY_PATH 
+Rscript SCCeeker.R -f $ANY_PATH /cat_all5_blast.out -w whole_cassette_SCCmec_database_EXTENDED_20171117 -k $ANY_PATH /cat_all5_kmer.tsv 
 ```
+where `$ABSOLUTE_PATH_SCCeeker` is the path where you cloned SCCeeker, $ANY_PATH  is the path where you want the ouputs to be saved at.  
+
 To get all options, runs:
 ```
 bash SCCeeker_severalGenomes.sh -h
