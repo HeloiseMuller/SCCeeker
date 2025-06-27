@@ -26,7 +26,7 @@ The pipeline was not tested with other versions of the above programs, but other
 ## Installation
 In a bash-compatible terminal that can execute git, paste
 ```
- git clone git@github.com:HeloiseMuller/SCCeeker.git
+ git clone https://github.com/HeloiseMuller/SCCeeker.git
  cd SCCeeker/
  unzip DB_20171117.zip 
 ```
