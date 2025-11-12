@@ -4,7 +4,7 @@
 SCCeeker has been developed to annote SCCmec and SCCmec-like elements.
 
 ## Citation
-Please cite our paper "Diversification of the staphylococcal cassette chromosome through distinct mechanisms of horizontal transfer" by [Héloïse Muller and Cheryl P. Andam](https://academic.oup.com/gbe/advance-article/doi/10.1093/gbe/evaf214/8321473?searchresult=1&login=true)
+Please cite our paper "Diversification of the staphylococcal cassette chromosome through distinct mechanisms of horizontal transfer" by [Héloïse Muller and Cheryl P. Andam (2025)](https://academic.oup.com/gbe/advance-article/doi/10.1093/gbe/evaf214/8321473?searchresult=1&login=true)
 
 ## Requirements
 - [R](https://cran.r-project.org) 4.3+ with the following packages:
